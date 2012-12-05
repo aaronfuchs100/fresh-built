@@ -6,7 +6,6 @@ class AddUsersTable < ActiveRecord::Migration
       t.string :company
       t.integer :company_id
       t.integer :order_id
-
       t.timestamps
     end
   end

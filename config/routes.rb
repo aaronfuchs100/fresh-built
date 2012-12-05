@@ -1,11 +1,14 @@
 FreshBuilt::Application.routes.draw do
-  
+
   root :to => 'home#index'
   resources :users
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   get '/logout' => 'session#destroy'
+  get '/order' => 'order#order'
+  get '/about' => 'home#about'
+  get '/company_list' => 'home#company_list'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
