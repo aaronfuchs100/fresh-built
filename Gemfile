@@ -13,7 +13,8 @@ gem 'bcrypt-ruby'
 gem 'annotate'
 gem 'rails-footnotes'
 gem 'rmagick'
-
+gem 'activeadmin'
+gem "meta_search"
 
 # Gems used only for assets and not required
 # in production environments by default.

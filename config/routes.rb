@@ -1,7 +1,12 @@
 FreshBuilt::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'home#index'
   resources :users
+  resources :companies
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'
