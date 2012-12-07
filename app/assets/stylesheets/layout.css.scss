@@ -4,18 +4,28 @@ body{
 
 
 header{
-	height: 100px;
-	background-color: #333;
+	height: 140px;
+  width: 100%;
+	background-image:url('top-header.png');
 }
 
 #main{
-	height: 900px;
-	margin: 30px;
-	border: 1px dotted black;
-	padding: 30px;
+  min-height: 835px;
+  height: auto;
+  background-image:url('main-content.png');
 }
 
-footer       	{
-	height: 100px;
-	background-color: #333;
+#orders_left{
+  height: 75px;
+  width: 252px;
+  background-color: green;
+}
+
+footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:55px;
+  width:100%;
+  background-image:url('bottom-bar.png');
 }
