@@ -1,1 +1,5 @@
-company list drop down
+<% @companies.each do |c| %>
+		<div id="comapny">
+			<%= link_to c.name, c %> <br>
+		</div>
+		<% end %>

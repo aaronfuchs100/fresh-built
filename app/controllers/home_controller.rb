@@ -7,5 +7,7 @@ class HomeController < ApplicationController
   end
   def company_list
 
+  	@companies = Company.all
+
   end
 end
