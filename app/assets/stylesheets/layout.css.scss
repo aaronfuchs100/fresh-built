@@ -4,21 +4,26 @@ body{
 
 
 header{
-	height: 140px;
+	height: 120px;
   width: 100%;
-	background-image:url('top-header.png');
+  margin-bottom: 20px;
+  border: 2px dotted black;
+  
 }
 
 #main{
+  width: 960px;
+  margin: auto;
   min-height: 835px;
   height: auto;
-  background-image:url('main-content.png');
+  border: 1px dotted black;
+  
 }
 
 #orders_left{
   height: 75px;
   width: 252px;
-  background-color: green;
+  
 }
 
 footer{
@@ -27,5 +32,6 @@ footer{
   bottom:0px;
   height:55px;
   width:100%;
-  background-image:url('bottom-bar.png');
+  border: 2px dotted black;
+  
 }
