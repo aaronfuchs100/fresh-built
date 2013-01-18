@@ -1,0 +1,129 @@
+
+
+/****  Filtering ****/
+
+.filter {
+  height: 50px;
+  border: 1px dotted black;
+}
+
+.filter a {
+  float: left;
+  margin: 10px;
+  padding: 3px 15px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+
+
+
+/****  Main Content ****/
+
+
+ .user{
+  border: 1px dotted gray;
+  margin: 10px;
+  padding: 10px;
+  height: 150px;
+  background-color: red;
+  width: 500px;
+
+ }
+
+ .clear{
+    clear: both;
+  }
+
+ .info{
+  border: 1px dotted red;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+ }
+ .avatar{
+  display: inline-block;
+  float: left;
+ }
+
+ .photo{
+  float: left;
+  margin: 10px;
+  padding: 10px;
+ }
+ .photo:hover{
+  background-color: gray;
+  border-radius: 10px;
+ }
+ .photo.america:hover{
+
+  background-color: red;
+  border-radius: 10px;
+
+ }
+
+ #design {
+  border: 1px black dotted;
+ }
+
+
+ /****  TipTip Styles ****/
+
+ #tiptip_holder p {
+  font-size: 8px;
+  background-color: green;
+ }
+
+ /**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+
+

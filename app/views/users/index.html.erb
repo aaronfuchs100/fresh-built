@@ -1,1 +1,38 @@
-index
+<script>
+
+$(function(){
+  $(".photo").tipTip({defaultPosition: "top", fadeOut: 200, edgeOffset: 10});
+});
+
+</script>
+
+<div class = "filter">
+    <ul id="test">
+          <a href="#" data-filter="*">All (<%= @users.count%>)</a>
+          <a href="#" data-filter=".africa">Africa (<%= @africa.count%>)</a>
+          <a href="#" data-filter=".america">America (<%= @america.count%>)</a>
+          <a href="#" data-filter=".asia">Asia (<%= @asia.count%>)</a>
+    </ul>
+</div>
+
+
+
+  <div class = "design">
+    <% @users.each do |user| %>
+          <div class = "photo <%= user.region.try :downcase %>" title = "<%= "#{user.first_name} #{user.last_name} </p>" %>" >
+             <%= link_to image_tag(user.avatar.thumb, :class => "avatar"), user, data: {'toggle' => 'modal', 'target' => '#modal'}  %>
+          </div>
+    <% end %>
+  </div>
+
+<div class = "clear"></div>
+
+
+  <div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal-body">
+
+  </div>
+
+</div>
+

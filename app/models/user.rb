@@ -14,5 +14,10 @@
 
 class User < ActiveRecord::Base
   has_secure_password
-  
+  mount_uploader :avatar, AvatarUploader
+
+  def self.filter(query)
+    self.where("region @@ :q", :q => query)
+  end
+
 end

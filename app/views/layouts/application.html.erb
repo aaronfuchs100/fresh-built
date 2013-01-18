@@ -11,17 +11,15 @@
 
 	<header>
     <ul>
-      <li class="active"><%= link_to 'home', root_path %></li>
-      <li><%= link_to 'About Us', about_path %></li>
       <li><%= link_to 'Login', login_path %></li>
       <li><%= link_to 'Create User', new_user_path %></li>
-      <li><%= link_to 'Order', order_path %></li>
+      <li><%= link_to 'Ambassadors', users_path %></li>
     </ul>
 	</header>
 
 	<div id = "main">
     <nav>
-      
+
     </nav>
 		<%= yield %>
 	</div>

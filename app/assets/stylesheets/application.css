@@ -2,4 +2,7 @@
  *= require_self
  *= require 'css/bootstrap.css'
  *= require 'layout.css.scss'
+ *= require 'font-awesome'
+ *= require 'tipTip'
+ *= require 'front.css'
  */

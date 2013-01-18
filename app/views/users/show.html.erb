@@ -1,0 +1,46 @@
+<style type="text/css">
+
+.left {
+  margin-left: 30px;
+  float: left;
+  border: 1px dotted black;
+}
+
+.right {
+  float: left;
+  margin-left: 75px;
+  border: 1px dotted black;
+}
+
+.avatar{
+  width: 300px;
+}
+
+
+</style>
+
+<div class = "left">
+  <div class = "avatar">
+    <%= image_tag(@user.avatar)  %></br>
+  </div>
+
+  <div class = "contact">
+    <h4>Contact Details </h4>
+    <i class="icon-envelope icon-3x"></i> <%= @user.email  %></br>
+    <i class="icon-ok-sign icon-3x"></i> <%= @user.skype  %></br>
+    <i class="icon-linkedin-sign icon-3x"></i> <%= link_to @user.linkedin %>
+  </div>
+</div>
+
+<div class = "right">
+  <div class = "bio">
+     <h2> Meet <%= @user.first_name %> </h2>
+     <h3>Hailing from <%= @user.region  %></h3>
+     <h4>A little life histroy...</h4>
+     <%= @user.bio  %>
+
+  </div>
+</div>
+
+
+
